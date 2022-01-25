@@ -1,0 +1,30 @@
+.stopwatch {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(100px,auto));
+    grid-template-rows: minmax(300px, auto) minmax(100px, auto);
+    border: solid silver 2px;
+}
+
+.panel {
+    border-bottom: solid silver 1px;
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/5;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 4px 1px silver;
+        background-color: rgb(240, 238, 238);
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+}
+
